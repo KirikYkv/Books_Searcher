@@ -8,4 +8,5 @@
 packages/
 *.json
 App.config
+*.user
 

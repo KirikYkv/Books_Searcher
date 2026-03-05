@@ -8,25 +8,10 @@
 > 
 > ⚠️ **The project only works in Windows environments.** Running on Linux or macOS is not supported due to architectural limitations of the graphical interface.
 
-*   **OS:** Windows 7 / 10 / 11
-*   **Platform:** .NET Framework 4.7.2 or higher
+*   **OS:** Windows 10 / 11
+*   **Runtime:** .NET Framework 4.7.2 or higher
+* * **SDK:** [.NET](https://dotnet.microsoft.com/ru-ru/download/dotnet) SDK 8.0 or newer 
 *   **Browser:** Google Chrome (for Selenium to work)
- ## Dependencies
-
- The following main packages and tools are used for the project:
-
- 1. .NET Framework 4.7.2
- 2. Selenium WebDriver
- 3. .NET SDK (Recommended version 8.0 or higher)
- 4. NuGet CLI, install it [here](https://www.nuget.org/downloads)
- 
-    [.NET](https://dotnet.microsoft.com/ru-ru/download/dotnet)
-
-
- 
-
- 
- > Click [here](https://www.nuget.org/packages/Selenium.WebDriver) to read more about Selenium WebDriver
 
  ## How to launch:
 
@@ -37,11 +22,14 @@
  ```
  Restore dependencies and build project:
  ```
- dotnet build --configuration Release
+ dotnet restore
+
+ dotnet build 
  ```
  Run the binary (executable) file:
  ```
- .\MyParser\bin\Release\MyParser.exe
+ dotnet run
+
  ```
 
 
