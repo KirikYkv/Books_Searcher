@@ -32,18 +32,13 @@
 
  Clone it:
  ```
- git clone https://github.com
- cd Book_Manager
+ git clone https://github.com/KirikYkv/Books_Searcher
+ cd Books_Searcher
  ```
- Restore dependencies (NuGet):
+ Restore dependencies and build project:
  ```
- nuget restore MyParser.sln
+ dotnet build --configuration Release
  ```
- Build the project:
- ```
- msbuild MyParser.sln /p:Configuration=Release
- ```
-
  Run the binary (executable) file:
  ```
  .\MyParser\bin\Release\MyParser.exe
