@@ -28,7 +28,7 @@
  ```
  Run the binary (executable) file:
  ```
- dotnet run
+ dotnet run --project MyParser
 
  ```
 
