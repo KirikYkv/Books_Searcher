@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<OutputType>WinExe</OutputType>
@@ -6,9 +6,13 @@
 		<UseWindowsForms>true</UseWindowsForms>
 		<AssemblyName>MyParser</AssemblyName>
 		<RootNamespace>MyParser</RootNamespace>
-		<Deterministic>true</Deterministic>
+		<DebugType>portable</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<Deterministic>false</Deterministic>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 	</PropertyGroup>
+
 
 	<ItemGroup>
 		<PackageReference Include="Selenium.WebDriver" Version="4.35.0" />

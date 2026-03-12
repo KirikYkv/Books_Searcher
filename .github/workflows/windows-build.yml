@@ -7,7 +7,8 @@ on:
     branches: [ "main", "master" ]
 
 jobs:
-  build:
+  build_and_test:
+    name: Build and Check
     runs-on: windows-latest
 
     steps:
@@ -22,8 +23,16 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore MyParser.sln
 
-      - name: Build project
+      - name: Check Code Style
+        run: dotnet format MyParser.sln --verify-no-changes --verbosity diagnostic
+
+      - name: Build
         run: dotnet build MyParser.sln --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test MyParser.sln --configuration Release --no-build --verbosity normal
+
+
 
 
 

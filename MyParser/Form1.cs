@@ -193,7 +193,7 @@ namespace Parserr
         }
 
 
-        private decimal ParseDecimal(string text)//метод для парсинга цены
+        public decimal ParseDecimal(string text)//метод для парсинга цены
         {
             if (string.IsNullOrEmpty(text) || text == "Не указана")
                 return 0m;
@@ -223,12 +223,12 @@ namespace Parserr
             return 0m;
         }
 
-        private DateTime ParseDate(string text)
+        public DateTime ParseDate(string text)
         {
             return DateTime.TryParse(text, out var date) ? date : DateTime.MinValue; //если не получилось распарсить, возвращаем минимальное значение даты
         }
 
-        private int ParseInt(string text)//метод для парсинга рейтинга
+        public int ParseInt(string text)//метод для парсинга рейтинга
         {
             return int.TryParse(text.Replace(",", "").Split(' ')[0], out var num) ? num : 0;//если не получилось распарсить, возвращаем 0
         }

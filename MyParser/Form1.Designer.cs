@@ -2,6 +2,7 @@
 
 namespace Parserr
 {
+
     partial class GoBack2
     {
         /// <summary>
@@ -28,6 +29,8 @@ namespace Parserr
         /// Требуемый метод для поддержки конструктора — не изменяйте 
         /// содержимое этого метода с помощью редактора кода.
         /// </summary>
+        /// 
+        [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
         private void InitializeComponent()
         {
             this.GoOver = new System.Windows.Forms.Button();

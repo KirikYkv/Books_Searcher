@@ -7,6 +7,7 @@ using System.Windows.Forms;
 
 namespace Parserr
 {
+    [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
     internal static class Program
     {
         /// <summary>
