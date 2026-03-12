@@ -29,8 +29,8 @@ jobs:
       - name: Build
         run: dotnet build MyParser.sln --configuration Release --no-restore
 
-      - name: Test
-        run: dotnet test MyParser.sln --configuration Release --no-build --verbosity normal
+      - name: Test with Coverage
+        run: dotnet test MyParser.sln --configuration Release /p:CollectCoverage=true /p:Threshold=70 /p:ThresholdType=line /p:Include="[MyParser]*"
 
 
 
